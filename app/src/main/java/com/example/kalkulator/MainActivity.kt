@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
-
+        var LiczbaPierwsza = 0
+        var LiczbaDruga = 0
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "9"
         }
         findViewById<Button>(R.id.plus).setOnClickListener {
-
+            LiczbaPierwsza = findViewById<TextView>(R.id.textView).text
         }
 
 
