@@ -52,15 +52,30 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button9).setOnClickListener {
             findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "9"
         }
-        findViewById<Button>(R.id.plus).setOnClickListener {
+        findViewById<Button>(R.id.dzielenie).setOnClickListener {
             LiczbaPierwsza = findViewById<TextView>(R.id.textView).text.toString().toInt()
             findViewById<TextView>(R.id.textView).text = ""
         }
-        findViewById<Button>(R.id.wyczysc).setOnClickListener {
+        findViewById<Button>(R.id.rownasie).setOnClickListener {
             LiczbaDruga = findViewById<TextView>(R.id.textView).text.toString().toInt()
             wynik = LiczbaDruga + LiczbaPierwsza
             findViewById<TextView>(R.id.textView).text = wynik.toString()
             wynik = 0
+        }
+        findViewById<Button>(R.id.rownasie).setOnClickListener {
+            LiczbaPierwsza = findViewById<TextView>(R.id.textView).text.toString().toInt()
+            findViewById<TextView>(R.id.textView).text = ""
+        }
+        findViewById<Button>(R.id.rownasie).setOnClickListener {
+            LiczbaPierwsza = findViewById<TextView>(R.id.textView).text.toString().toInt()
+            findViewById<TextView>(R.id.textView).text = ""
+        }
+        findViewById<Button>(R.id.rownasie).setOnClickListener {
+            LiczbaPierwsza = findViewById<TextView>(R.id.textView).text.toString().toInt()
+            findViewById<TextView>(R.id.textView).text = ""
+        }
+        findViewById<Button>(R.id.wyczysc).setOnClickListener {
+            findViewById<TextView>(R.id.textView).text = ""
         }
 
     }

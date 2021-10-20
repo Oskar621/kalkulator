@@ -8,6 +8,42 @@
     tools:visibility="visible">
 
     <Button
+        android:id="@+id/Mnozenie"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <Button
+        android:id="@+id/odejmowanie"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <Button
         android:id="@+id/rownasie"
         android:layout_width="110dp"
         android:layout_height="48dp"
@@ -166,16 +202,16 @@
         app:layout_constraintVertical_bias="0.132" />
 
     <Button
-        android:id="@+id/plus"
+        android:id="@+id/dzielenie"
         android:layout_width="107dp"
         android:layout_height="46dp"
-        android:text="+"
+        android:text="/"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.627" />
 
     <Button
         android:id="@+id/wyczysc"
