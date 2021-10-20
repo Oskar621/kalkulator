@@ -23,38 +23,37 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
         }
         findViewById<Button>(R.id.button_first).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = "0"
+            findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "0"
         }
         findViewById<Button>(R.id.button1).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = "1"
+            findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "1"
         }
         findViewById<Button>(R.id.button2).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = "2"
+            findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "2"
         }
         findViewById<Button>(R.id.button3).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = "3"
+            findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "3"
         }
         findViewById<Button>(R.id.button4).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = "4"
+            findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "4"
         }
         findViewById<Button>(R.id.button5).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = "5"
+            findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "5"
         }
         findViewById<Button>(R.id.button6).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = "6"
+            findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() + "6"
         }
         findViewById<Button>(R.id.button7).setOnClickListener {
-            findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = "7"
+            findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "7"
         }
         findViewById<Button>(R.id.button8).setOnClickListener {
-            findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = "8"
+            findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "8"
         }
         findViewById<Button>(R.id.button9).setOnClickListener {
-            findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = "9"
+            findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "9"
         }
         findViewById<Button>(R.id.plus).setOnClickListener {
-            findViewById<TextView>(R.id.wynik1).text = findViewById<TextView>(R.id.textView).text
-            findViewById<TextView>(R.id.textView).text = ""
+
         }
 
 
