@@ -8,8 +8,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
-import com.google.android.material.textfield.TextInputEditText
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,11 +17,12 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         var LiczbaPierwsza = 0
         var LiczbaDruga = 0
+        var wynik = 0
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
-        findViewById<Button>(R.id.button_first).setOnClickListener {
+        findViewById<Button>(R.id.button0).setOnClickListener {
             findViewById<TextView>(R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "0"
         }
         findViewById<Button>(R.id.button1).setOnClickListener {
@@ -54,9 +53,15 @@ class MainActivity : AppCompatActivity() {
             findViewById<android.widget.TextView>(com.example.kalkulator.R.id.textView).text = findViewById<TextView>(R.id.textView).text.toString() +  "9"
         }
         findViewById<Button>(R.id.plus).setOnClickListener {
-            LiczbaPierwsza = findViewById<TextView>(R.id.textView).text
+            LiczbaPierwsza = findViewById<TextView>(R.id.textView).text.toString().toInt()
+            findViewById<TextView>(R.id.textView).text = ""
         }
-
+        findViewById<Button>(R.id.wyczysc).setOnClickListener {
+            LiczbaDruga = findViewById<TextView>(R.id.textView).text.toString().toInt()
+            wynik = LiczbaDruga + LiczbaPierwsza
+            findViewById<TextView>(R.id.textView).text = wynik.toString()
+            wynik = 0
+        }
 
     }
 
